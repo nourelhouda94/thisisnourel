@@ -1,4 +1,4 @@
-# thisisnourel — Nour Elhouda's Portfolio ✨
+# thisisnourel — Nourelhouda's Portfolio ✨
 
 Welcome to the source code of [thisisnourel.com](https://thisisnourel.com) — a minimalist, responsive, and intentional personal portfolio built using **Next.js 15**, **Tailwind CSS**, and **TypeScript**.  
 It showcases my journey as a **UI/UX Designer** and **Frontend Developer**, with a focus on clean visuals, thoughtful storytelling, and performance.
@@ -19,18 +19,6 @@ It showcases my journey as a **UI/UX Designer** and **Frontend Developer**, with
 - [Framer Motion](https://www.framer.com/motion/) for subtle animations
 - [next/image](https://nextjs.org/docs/pages/api-reference/components/image) with static fallback
 - Deployed manually via FileZilla to a custom server
-
----
-
-## 🎨 Features
-
-- 🕋️ Custom Google Fonts: `Playfair Display` & `Plus Jakarta Sans`
-- 📱 Fully responsive, mobile-first layout
-- 💡 SEO-optimized meta tags
-- 🎯 Scroll-triggered animations (timeline, skills, sections)
-- 📩 Smooth contact CTA with email integration
-- 🔝 Sticky header and animated scroll-to-top button
-- 🌙 Soft minimalist design with personal flair
 
 ---
 
@@ -65,45 +53,13 @@ npm run dev
 
 ---
 
-## 📦 Static Export & Deployment
-
-This portfolio is statically exported for deployment to FTP servers (no SSR).
-
-```bash
-npm run build
-```
-
-This will automatically generate the `/out` folder thanks to:
-
-```ts
-// next.config.ts
-export const nextConfig = {
-  output: "export",
-  images: { unoptimized: true },
-};
-```
-
-Then you can upload the `/out` folder to your server via FileZilla or any FTP tool.
-
----
-
-## 📸 Previews
-
-| Hero Section              | Projects Grid             | Skills & Timeline         |
-|---------------------------|----------------------------|----------------------------|
-| ![](public/images/hero-preview.jpg) | ![](public/images/projects-preview.jpg) | ![](public/images/skills-preview.jpg) |
-
-> (Replace these with real screenshots if desired)
-
----
-
 ## 😇 About Me
 
-Hi, I’m **Nourelhouda**, a UI/UX Designer and Frontend Developer from Morocco, currently based in Germany 🇩🇪  
-I build experiences that feel like home — intuitive, elegant, and purpose-driven.
+Hi, I’m **Nourelhouda**, a UI/UX Designer and Frontend Developer from Morocco, currently based in Munich, Germany 🇩🇪  
+I build experiences that are intuitive, elegant, and purpose-driven.
 
-📧 Reach me at [nour@webdezign.co.uk](mailto:nour@webdezign.co.uk)  
-🔗 Follow me on [Instagram @thisisnourel](https://instagram.com/thisisnourel)
+📧 Reach me at [nour@webdezign.co.uk](mailto:nourelhouda.el@gmail.com)  
+🔗 Add me on [LinkedIn @nourelhouda-el](https://www.linkedin.com/in/nourelhouda-el/)
 
 ---
 
