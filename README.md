@@ -58,7 +58,7 @@ npm run dev
 Hi, I’m **Nourelhouda**, a UI/UX Designer and Frontend Developer from Morocco, currently based in Munich, Germany 🇩🇪  
 I build experiences that are intuitive, elegant, and purpose-driven.
 
-📧 Reach me at [nour@webdezign.co.uk](mailto:nourelhouda.el@gmail.com)  
+📧 Reach me at [nourelhouda.el@gmail.com](mailto:nourelhouda.el@gmail.com)  
 🔗 Add me on [LinkedIn @nourelhouda-el](https://www.linkedin.com/in/nourelhouda-el/)
 
 ---
