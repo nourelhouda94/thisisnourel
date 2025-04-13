@@ -1,26 +1,31 @@
+@config "../../tailwind.config.js";
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+html {
+  scroll-behavior: smooth;
+  color: #111111;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.accent{
+  color: #e8505b; /* rose-500 */
+}
+.bg-accent{
+  background-color: #e8505b; /* rose-500 */
+}
+.bg-accent:hover{
+  background-color: #c3232e; /* gray-100 */
+}
+/* Custom scrollbar for timeline or any scrollable div */
+.scrollable::-webkit-scrollbar {
+  width: 6px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #e8505b; /* rose-500 */
+  border-radius: 9999px;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.scrollable::-webkit-scrollbar-track {
+  background-color: #f3f4f6; /* gray-100 */
 }
