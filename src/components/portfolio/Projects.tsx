@@ -1,38 +1,48 @@
+// src/components/portfolio/Projects.tsx
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
-import { ArrowUpRight } from "lucide-react";
+
+// Import images from assets
+import rgdImg from "@/assets/rgd.png";
+import nostradamusImg from "@/assets/nostradamus.png";
+import rxfarmaImg from "@/assets/rxfarma.png";
+import bookmeImg from "@/assets/bookme.png";
 
 const projects = [
   {
     id: 1,
     title: "E-Commerce Platform Redesign",
     category: "UI/UX Design",
-    description: "Rebuilt the full e-commerce flow with senior-friendly UX, product discoverability, and cleaner navigation using WooCommerce.",
-    image: "../src/components/portfolio/img/rgd.png",
+    description:
+      "Rebuilt the full e-commerce flow with senior-friendly UX, product discoverability, and cleaner navigation using WooCommerce.",
+    image: rgdImg,
     tags: ["Figma", "Wordpress", "WooCommerce"],
   },
   {
     id: 2,
     title: "Data Intelligence Dashboard",
     category: "Frontend Development",
-    description: "Created a dark-mode dashboard to visualize corporate sentiment using rich data filters and charts. Intuitive, component-based layout with advanced filtering.",
-    image: "../src/components/portfolio/img/nostradamus.png",
+    description:
+      "Created a dark-mode dashboard to visualize corporate sentiment using rich data filters and charts. Intuitive, component-based layout with advanced filtering.",
+    image: nostradamusImg,
     tags: ["Figma", "Prototyping", "User Research"],
   },
   {
     id: 3,
     title: "Healthcare Branding & Website",
     category: "UI/UX Design",
-    description: "Redesigned the brand and website to improve trust and accessibility in the pharmaceutical space. Clean healthcare-focused UI and optimized mobile experience.",
-    image: "../src/components/portfolio/img/rxfarma.png",
+    description:
+      "Redesigned the brand and website to improve trust and accessibility in the pharmaceutical space. Clean healthcare-focused UI and optimized mobile experience.",
+    image: rxfarmaImg,
     tags: ["Figma", "Photoshop/Illustrator", "User Research"],
   },
   {
     id: 4,
     title: "Service Booking Web Application",
     category: "UI/UX Design & Frontend Development",
-    description: "Designed and built a responsive web app to simplify booking services with trainers and professionals. Focused on mobile-first UX, intuitive navigation, and real-time reservation management. Delivered both client-facing interfaces and a back-office dashboard for providers.",
-    image: "../src/components/portfolio/img/bookme.png",
+    description:
+      "Designed and built a responsive web app to simplify booking services with trainers and professionals. Focused on mobile-first UX, intuitive navigation, and real-time reservation management. Delivered both client-facing interfaces and a back-office dashboard for providers.",
+    image: bookmeImg,
     tags: ["Figma", "Next.js", "Tailwind"],
   },
 ];
@@ -82,11 +92,6 @@ export function Projects() {
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/10 transition-colors duration-500" />
-                
-                {/* Hover Arrow */}
-                {/* <div className="absolute top-4 right-4 w-10 h-10 rounded-full bg-background flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-2 group-hover:translate-y-0">
-                  <ArrowUpRight className="h-5 w-5 text-foreground" />
-                </div> */}
               </div>
 
               {/* Content */}
@@ -94,9 +99,7 @@ export function Projects() {
               <h3 className="font-heading text-2xl font-medium mt-2 mb-3 group-hover:text-primary transition-colors duration-300">
                 {project.title}
               </h3>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                {project.description}
-              </p>
+              <p className="text-muted-foreground text-sm leading-relaxed mb-4">{project.description}</p>
 
               {/* Tags */}
               <div className="flex flex-wrap gap-2">
