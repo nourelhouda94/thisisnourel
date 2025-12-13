@@ -1,22 +1,18 @@
 import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { Mail, MapPin, Send, Linkedin, Github, Twitter } from "lucide-react";
+import { Mail, MapPin, Send, Linkedin, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 const socialLinks = [{
   icon: Linkedin,
-  href: "#",
+  href: "https://www.linkedin.com/in/nourelhouda-el/",
   label: "LinkedIn"
 }, {
   icon: Github,
-  href: "#",
+  href: "https://github.com/nourelhouda94",
   label: "GitHub"
-}, {
-  icon: Twitter,
-  href: "#",
-  label: "Twitter"
 }];
 export function Contact() {
   const ref = useRef(null);
@@ -92,7 +88,7 @@ export function Contact() {
 
             {/* Social Links */}
             <div className="flex gap-4">
-              {socialLinks.map(social => <a key={social.label} href={social.href} aria-label={social.label} className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground transition-all duration-300">
+              {socialLinks.map(social => <a key={social.label} href={social.href} aria-label={social.label} target="_blank" className="w-12 h-12 rounded-full border border-border flex items-center justify-center text-muted-foreground hover:text-foreground hover:border-foreground transition-all duration-300">
                   <social.icon className="h-5 w-5" />
                 </a>)}
             </div>
