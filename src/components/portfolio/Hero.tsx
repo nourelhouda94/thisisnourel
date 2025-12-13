@@ -101,7 +101,7 @@ export function Hero() {
       </div>
 
       {/* Scroll indicator */}
-      <motion.div initial={{
+      {/* <motion.div initial={{
       opacity: 0
     }} animate={{
       opacity: 1
@@ -119,6 +119,6 @@ export function Hero() {
           <span className="text-xs uppercase tracking-widest">Scroll</span>
           <ArrowDown className="h-4 w-4" />
         </motion.a>
-      </motion.div>
+      </motion.div> */}
     </section>;
 }

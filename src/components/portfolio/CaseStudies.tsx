@@ -92,8 +92,8 @@ export function CaseStudies() {
                         <div className="flex justify-center mb-2">
                           <metric.icon className="h-5 w-5 text-primary" />
                         </div>
-                        <span className="block font-heading text-2xl font-medium">{metric.value}</span>
-                        <span className="text-xs text-muted-foreground">{metric.label}</span>
+                        <span className="block font-heading text-base sm:text-2xl font-medium">{metric.value}</span>
+                        <span className="text-sm sm:text-xs text-muted-foreground">{metric.label}</span>
                       </div>
                     ))}
                   </div>
