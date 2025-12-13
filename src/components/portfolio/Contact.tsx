@@ -144,7 +144,7 @@ export function Contact() {
             }}
           >
             <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid sm:grid-cols-2 gap-6">
+              <div className="pt-24 grid sm:grid-cols-2 gap-6">
                 <Input
                   name="name"
                   placeholder="Your name"
